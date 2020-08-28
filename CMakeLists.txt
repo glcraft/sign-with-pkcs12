@@ -14,6 +14,4 @@ target_link_libraries(sign-pkcs12
     OpenSSL::Crypto
     ZLIB::ZLIB
 )
-find_package(Libssh2 CONFIG REQUIRED)
-target_link_libraries(sign-pkcs12 Libssh2::libssh2)
 set_target_properties(sign-pkcs12 PROPERTIES OUTPUT_NAME "sign-with-pkcs12")
